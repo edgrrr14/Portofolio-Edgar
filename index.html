@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="UI/UX Designer Portfolio — Creating delightful digital experiences with bold colors and playful design." />
+  <title>Edgar · UI/UX Designer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== MOBILE HAMBURGER ===== -->
+  <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- ===== SIDEBAR OVERLAY (mobile) ===== -->
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <!-- ===== SIDEBAR ===== -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-brand">
+      <img src="assets/profile_hero.jpeg" alt="Edgar" class="brand-avatar" style="object-fit: cover;" />
+      <div>
+        <div class="brand-name">Edgar</div>
+        <div class="brand-role">UI/UX Designer</div>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav" aria-label="Main navigation">
+      <a href="#home" class="nav-link active" id="nav-home" data-section="home">
+        <span class="nav-icon">✦</span> Home
+      </a>
+      <a href="#about" class="nav-link" id="nav-about" data-section="about">
+        <span class="nav-icon">👤</span> About
+      </a>
+      <a href="#work" class="nav-link" id="nav-work" data-section="work">
+        <span class="nav-icon">🎨</span> Work
+      </a>
+      <a href="#skills" class="nav-link" id="nav-skills" data-section="skills">
+        <span class="nav-icon">⚡</span> Skills
+      </a>
+      <a href="#contact" class="nav-link" id="nav-contact" data-section="contact">
+        <span class="nav-icon">✉️</span> Contact
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="social-links">
+        <a href="mailto:gregoriusedgar90@gmail.com" class="social-btn" aria-label="Email" id="social-email">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/gregorius-edgar-dessaratu-0752372a2" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn" id="social-linkedin">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+      </div>
+      <div class="availability-badge">
+        <span class="dot"></span> Available for work
+      </div>
+    </div>
+  </aside>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="main-content" id="mainContent">
+
+    <!-- ===== HOME SECTION ===== -->
+    <section class="section" id="home">
+      <div class="hero-wrapper">
+        <div class="hero-deco deco-1"></div>
+        <div class="hero-deco deco-2"></div>
+        <div class="hero-deco deco-3"></div>
+
+        <div class="hero-text">
+          <div class="hero-tag">✦ UI/UX Designer based in Indonesia</div>
+          <h1 class="hero-headline">
+            I design <span class="highlight-coral">delightful</span><br />
+            digital <span class="highlight-purple">experiences</span>
+          </h1>
+          <p class="hero-sub">
+            Turning complex problems into beautiful, intuitive interfaces.<br />
+            I believe design should be fun, and human-first.
+          </p>
+          <div class="hero-cta">
+            <a href="#work" class="btn btn-primary" id="viewWorkBtn">View My Work 🎨</a>
+          </div>
+
+
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-blob"></div>
+          <img src="assets/profile_hero.jpeg" alt="Edgar - UI/UX Designer" class="hero-img" id="heroImg" />
+          <div class="floating-chip chip-figma">
+            <span>🎨</span> Figma
+          </div>
+          <div class="floating-chip chip-ux">
+            <span>🧠</span> UX Research
+          </div>
+          <div class="floating-chip chip-proto">
+            <span>⚡</span> Prototyping
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section" id="about">
+      <div class="section-header">
+        <div class="section-tag">About</div>
+        <h2 class="section-title">The designer <span class="highlight-coral">behind</span> the pixels</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-photo-col">
+          <div class="about-photo-frame">
+            <div class="about-photo-blob"></div>
+            <img src="assets/profile_hero.jpeg" alt="Edgar Profile Photo" class="about-avatar-img" />
+            <div class="about-badge badge-top">
+              <span>⭐</span> Design Thinker
+            </div>
+            <div class="about-badge badge-bottom">
+              <span>🚀</span> Problem Solver
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text-col">
+          <p class="about-lead">
+            Halo! Saya <strong>Edgar</strong>, seorang <strong>UI/UX Designer</strong> yang berbasis di Bandung, namun
+            akar saya berasal dari <strong>Mamasa, Sulawesi Barat</strong>. Sebagai mahasiswa <strong>Teknologi
+              Informasi di Universitas Telkom</strong>, saya memiliki perspektif unik dalam memandang sebuah produk
+            digital: saya tidak hanya melihat bagaimana desain terlihat secara visual, tetapi juga bagaimana desain
+            tersebut bekerja secara teknis.
+          </p>
+          <p class="about-body">
+            Saya percaya bahwa desain yang hebat adalah jembatan yang menghubungkan kebutuhan manusia dengan kecanggihan
+            teknologi. Dengan latar belakang IT, saya mampu memahami keterbatasan dan potensi pengembangan dari sisi
+            teknis, yang memungkinkan saya menciptakan solusi desain yang tidak hanya indah secara estetika, tetapi juga
+            efisien dan dapat diimplementasikan dengan sempurna oleh tim pengembang.
+          </p>
+          <p class="about-body">
+            Perjalanan saya di dunia desain telah diperkuat melalui berbagai pengalaman nyata:
+          </p>
+          <ul class="about-experience-list">
+            <li><strong>Kompetisi UI/UX:</strong> Meski tidak secara rutin mengikuti kompetisi reguler, saya pernah menantang diri secara intensif dengan berpartisipasi dalam kompetisi <em>hackathon</em>. Pengalaman berharga ini menguji kemampuan <em>problem-solving</em> dan pembuatan keputusan desain saya di bawah tekanan waktu yang sangat ketat.
+            </li>
+            <li><strong>Freelance & Proyek:</strong> Jam terbang saya dibangun secara solid melalui pengerjaan proyek-proyek berskala kampus. Selain mengerjakan tugas akademik pribadi, saya juga membuka jasa <em>freelance</em> untuk merancang dan memvisualisasikan antarmuka (UI/UX) pada tugas proyek perkuliahan rekan sesama mahasiswa.</li>
+            <li><strong>Kolaborasi Tim:</strong> Saya terbiasa mengerjakan proyek dari tahap riset pengguna, pembuatan
+              <em>wireframe</em>, hingga <em>high-fidelity prototype</em> yang siap serah-terima ke bagian
+              <em>frontend</em>.
+            </li>
+          </ul>
+          <p class="about-body">
+            Fokus saya adalah menciptakan pengalaman yang bermakna bagi setiap pengguna. Saya selalu bersemangat untuk
+            menghadapi tantangan baru dan berkolaborasi dalam proyek-proyek inovatif yang memberikan dampak positif.
+          </p>
+          <p class="about-body about-cta-text">
+            <strong>Mari terhubung dan wujudkan ide besar Anda menjadi kenyataan! ✨</strong>
+          </p>
+
+          <div class="about-tools">
+            <span class="tool-tag">Figma</span>
+            <span class="tool-tag">Prototype</span>
+            <span class="tool-tag">Maze</span>
+            <span class="tool-tag">Affinity</span>
+          </div>
+
+          <a href="assets/CV_Gregorius Edgar Dessaratu.pdf" download class="btn btn-primary" id="downloadCvBtn"
+            style="display:inline-flex;margin-top:1.5rem;">Download
+            CV ↓</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WORK SECTION ===== -->
+    <section class="section" id="work">
+      <div class="section-header">
+        <div class="section-tag">Work</div>
+        <h2 class="section-title">Selected <span class="highlight-purple">projects</span></h2>
+        <p class="section-sub">A curated collection of my favorite design works</p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project Card 1 -->
+        <article class="project-card card-large" id="project-1">
+          <div class="project-img-wrap">
+            <img src="assets/project_1.png" alt="POLABDC dental clinic management dashboard and login page UI"
+              class="project-img" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-light" id="viewProject1Btn">View Case Study →</a>
+              <a href="https://www.figma.com/proto/36TcSUm9gah1hORtHbbOlc/Projek-Protein?node-id=30-31&p=f&t=ivNH9R9y5ga2VKDE-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=30%3A31"
+                target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="viewPrototype1Btn"
+                style="font-size:0.85rem;padding:0.65rem 1.3rem;">View Prototype ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag ptag-coral">Web App</span>
+              <span class="ptag ptag-purple">Healthcare</span>
+            </div>
+            <h3 class="project-title">POLABDC — Dental Clinic Management System</h3>
+            <p class="project-desc">Merancang sistem manajemen klinik gigi yang memudahkan dokter dalam mengelola jadwal
+              praktik, data kunjungan pasien, dan prediksi perawatan secara efisien dalam satu platform terintegrasi.
+            </p>
+          </div>
+        </article>
+
+        <!-- Project Card 2 -->
+        <article class="project-card" id="project-5">
+          <div class="project-img-wrap">
+            <img src="assets/project_5.png" alt="Lync Link Shortener and QR Generator app UI mockups"
+              class="project-img" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-light" id="viewProject5Btn">View Case Study →</a>
+              <a href="https://www.figma.com/proto/XBPKERhgINB6EEOgimjvnP/Tugas-APB?node-id=6-5&t=MYXsCfs78XKd0Xua-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=15%3A802"
+                target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="viewPrototype5Btn"
+                style="font-size:0.85rem;padding:0.65rem 1.3rem;">View Prototype ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag ptag-purple">Mobile App</span>
+              <span class="ptag ptag-yellow">Academic</span>
+              <span class="ptag ptag-cyan">Productivity</span>
+            </div>
+            <h3 class="project-title">Lync — URL Shortener & QR Maker</h3>
+            <p class="project-desc">Tugas kuliah pembuatan aplikasi mobile untuk mempermudah pengguna dalam menyingkat
+              tautan panjang dan menghasilkan serta mengelola QR code secara instan.</p>
+          </div>
+        </article>
+
+        <!-- Project Card 3 -->
+        <article class="project-card" id="project-3">
+          <div class="project-img-wrap">
+            <img src="assets/project_3.png" alt="Biopond IoT waste management and maggot farming app UI"
+              class="project-img" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-light" id="viewProject3Btn">View Case Study →</a>
+              <a href="https://www.figma.com/proto/5IR3eLwRPDhgagwNwnJjEJ/Hackathon?node-id=301-10057&t=xmR3f4XUN29HIndq-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=6%3A43"
+                target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="viewPrototype3Btn"
+                style="font-size:0.85rem;padding:0.65rem 1.3rem;">View Prototype ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag ptag-purple">Mobile App</span>
+              <span class="ptag ptag-yellow">Hackathon</span>
+              <span class="ptag ptag-cyan">IoT</span>
+            </div>
+            <h3 class="project-title">Green Maggot — Smart Waste & IoT</h3>
+            <p class="project-desc">Aplikasi penukaran sampah organik berbasis IoT untuk pemantauan real-time budidaya
+              maggot BSF, dikembangkan dalam kompetisi hackathon.</p>
+          </div>
+        </article>
+
+        <!-- Project Card 4 -->
+        <article class="project-card" id="project-4">
+          <div class="project-img-wrap">
+            <img src="assets/project_4.png" alt="RiseMind PTSD support app UI mockups" class="project-img" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-light" id="viewProject4Btn">View Case Study →</a>
+              <a href="https://www.figma.com/proto/Yj3TcebWQk9q3gJEkLFotb/Aplikasi-PTSD--Rizki-?node-id=197-3183&t=3yISQ7DXCbAeAs8G-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=208%3A91"
+                target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="viewPrototype4Btn"
+                style="font-size:0.85rem;padding:0.65rem 1.3rem;">View Prototype ↗</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag ptag-purple">Mobile App</span>
+              <span class="ptag ptag-coral">Health & Wellness</span>
+            </div>
+            <h3 class="project-title">RiseMind — PTSD Support App</h3>
+            <p class="project-desc">Aplikasi untuk membantu penyintas PTSD (Post-Traumatic Stress Disorder) dalam
+              mengelola trauma dengan tools psikologis harian.</p>
+          </div>
+        </article>
+
+        <!-- Project Card 5 -->
+        <article class="project-card" id="project-2">
+          <div class="project-img-wrap">
+            <img src="assets/project_2.png" alt="Mamikos mobile app redesign UI mockups" class="project-img" />
+            <div class="project-overlay">
+              <a href="#" class="btn btn-light" id="viewProject2Btn">View Case Study →</a>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="ptag ptag-cyan">Mobile App</span>
+              <span class="ptag ptag-purple">Redesign</span>
+            </div>
+            <h3 class="project-title">Mamikos — App Redesign</h3>
+            <p class="project-desc">Redesign aplikasi Mamikos dengan fokus pada peningkatan pengalaman pemilik kos dalam
+              mengelola properti dan menjangkau calon penghuni secara lebih efektif.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section class="section" id="skills">
+      <div class="section-header">
+        <div class="section-tag">Skills</div>
+        <h2 class="section-title">My design <span class="highlight-coral">toolkit</span></h2>
+      </div>
+
+      <div class="skills-bento">
+
+        <div class="bento-card bento-tall" id="skill-process">
+          <div class="bento-icon">🔍</div>
+          <h3>Proses Desain</h3>
+          <p>Saya menggunakan pendekatan desain yang berpusat pada manusia — mulai dari riset dan pengembangan ide
+            hingga prototyping dan pengujian.</p>
+          <div class="process-steps">
+            <div class="step"><span>01</span> Riset</div>
+            <div class="step"><span>02</span> Definisi</div>
+            <div class="step"><span>03</span> Pengembangan Ide</div>
+            <div class="step"><span>04</span> Prototype</div>
+            <div class="step"><span>05</span> Pengujian</div>
+          </div>
+        </div>
+
+        <div class="bento-card bento-bright" id="skill-ux">
+          <div class="bento-icon">🧠</div>
+          <h3>UX Research</h3>
+          <p>Wawancara pengguna, usability testing, affinity mapping, dan pemetaan perjalanan pengguna untuk menemukan
+            wawasan mendalam.</p>
+        </div>
+
+        <div class="bento-card bento-purple" id="skill-ui">
+          <div class="bento-icon">🎨</div>
+          <h3>UI Design</h3>
+          <p>Menciptakan desain visual pixel-perfect dengan pemahaman tipografi, teori warna, dan hierarki visual yang
+            kuat.</p>
+        </div>
+
+        <div class="bento-card bento-wide" id="skill-proto">
+          <div class="bento-icon">⚡</div>
+          <h3>Interaksi & Prototyping</h3>
+          <p>Membangun prototype interaktif high-fidelity yang terasa nyata sebelum satu baris kode pun ditulis. Saya
+            menggunakan Figma, Prototype, dan Framer untuk menghidupkan setiap interaksi.</p>
+          <div class="skill-bar-list">
+            <div class="skill-bar-item">
+              <span>Figma</span>
+              <div class="bar">
+                <div class="bar-fill" style="width:95%;background:var(--coral)"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Prototype</span>
+              <div class="bar">
+                <div class="bar-fill" style="width:95%;background:var(--purple)"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <span>Framer</span>
+              <div class="bar">
+                <div class="bar-fill" style="width:70%;background:var(--cyan)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bento-card bento-yellow" id="skill-collab">
+          <div class="bento-icon">🤝</div>
+          <h3>Kolaborasi</h3>
+          <p>Bekerja sama erat dengan developer, Product Manager, dan pemangku kepentingan untuk meluncurkan
+            produk-produk hebat.</p>
+        </div>
+
+        <div class="bento-card" id="skill-ds">
+          <div class="bento-icon">📐</div>
+          <h3>Sistem Desain</h3>
+          <p>Membangun dan memelihara sistem desain serta library komponen yang terukur dan disukai oleh tim pengembang.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section" id="contact">
+      <div class="section-header">
+        <div class="section-tag">Contact</div>
+        <h2 class="section-title">Let's build something <span class="highlight-purple">amazing</span> together</h2>
+        <p class="section-sub">I'm currently available for freelance projects and full-time opportunities.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-col">
+          <div class="contact-card" id="contact-email-card">
+            <div class="contact-icon" style="background:var(--coral-light);">✉️</div>
+            <div>
+              <div class="contact-label">Email me</div>
+              <a href="mailto:gregoriusedgar90@gmail.com" class="contact-value" id="emailLink">gregoriusedgar90@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-card" id="contact-linkedin-card">
+            <div class="contact-icon" style="background:var(--purple-light);">🔗</div>
+            <div>
+              <div class="contact-label">Connect on LinkedIn</div>
+              <a href="https://www.linkedin.com/in/gregorius-edgar-dessaratu-0752372a2" target="_blank" rel="noopener noreferrer" class="contact-value" id="linkedinLink" style="font-size:0.9rem;word-break:break-all;">Gregorius Edgar Dessaratu</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="https://formsubmit.co/gregoriusedgar90@gmail.com" method="POST">
+          <div class="form-group">
+            <label for="inputName">Your Name</label>
+            <input type="text" id="inputName" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="inputEmail">Email Address</label>
+            <input type="email" id="inputEmail" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="inputMessage">Message</label>
+            <textarea id="inputMessage" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="submitContactBtn"
+            style="width:100%;justify-content:center;">
+            Send Message 🚀
+          </button>
+          <div class="form-success" id="formSuccess">
+            🎉 Message sent! I'll get back to you within 24 hours.
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== CASE STUDY MODAL ===== -->
+  <div class="cs-modal-overlay" id="csModalOverlay">
+    <div class="cs-modal" id="csModal">
+
+      <div class="cs-hero" id="csHero">
+        <button class="cs-close" id="csCloseBtn" aria-label="Close case study">✕</button>
+        <img src="" alt="" class="cs-hero-img" id="csHeroImg" />
+        <div class="cs-hero-gradient"></div>
+        <div class="cs-hero-content">
+          <div class="cs-tags" id="csTags"></div>
+          <h2 class="cs-title" id="csTitle"></h2>
+        </div>
+      </div>
+
+      <div class="cs-body">
+        <!-- Overview -->
+        <div class="cs-section">
+          <div class="cs-section-label">📋 Overview</div>
+          <p class="cs-text" id="csOverview"></p>
+        </div>
+
+        <!-- My Role -->
+        <div class="cs-section">
+          <div class="cs-section-label">🎯 My Role</div>
+          <p class="cs-text" id="csRole"></p>
+        </div>
+
+        <!-- The Challenge -->
+        <div class="cs-section">
+          <div class="cs-section-label">⚡ The Challenge</div>
+          <p class="cs-text" id="csChallenge"></p>
+        </div>
+
+        <!-- Design Process -->
+        <div class="cs-section">
+          <div class="cs-section-label">🔍 Design Process</div>
+          <div class="cs-process" id="csProcess"></div>
+        </div>
+
+        <!-- Key Results -->
+        <div class="cs-section">
+          <div class="cs-section-label">📊 Key Results</div>
+          <div class="cs-results" id="csResults"></div>
+        </div>
+
+        <!-- Tools Used -->
+        <div class="cs-section">
+          <div class="cs-section-label">🛠️ Tools Used</div>
+          <div class="cs-tools" id="csTools"></div>
+        </div>
+
+
+        <!-- Takeaway -->
+        <div class="cs-section">
+          <div class="cs-section-label">💡 Key Takeaway</div>
+          <blockquote class="cs-quote" id="csTakeaway"></blockquote>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js?v=19"></script>
+</body>
+
+</html>
